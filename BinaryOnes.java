@@ -1,3 +1,7 @@
+/**
+*   program to find Max no. of consecutive 1's in binary number of a number
+**/
+
 import java.util.Scanner;
 
 public class BinaryOnes
@@ -5,20 +9,21 @@ public class BinaryOnes
 	public static void main(String[] args) 
 	{
 		Scanner in =new Scanner(System.in);
-		int n,b=0;
+		int n,count=0;
+		/**
+		* inputing a number
+		**/
 		n=in.nextInt();
+		while(n){
 
-		while(n!=0)
-		{
-			b=b*10+n%2;
-			n=n/2;
+			//bit wise operation. << leftward swift.
+			// & bitwise and operator
+			 n = (n & (n << 1));
+
+			 // counts Max no. of consecutive 1's in binary number of n.
+		count++;
 		}
-		while(b!=0)
-		{
-			n=n*10+b%10;
-			b=b/10;
-		}
-		
-		System.out.println(n);
+
+		System.out.println(count);
 	}
 }
