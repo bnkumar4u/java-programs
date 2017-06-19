@@ -12,14 +12,21 @@ public class Main
 			{
 				int n=in.nextInt();
 				int m=in.nextInt();
-				if(n%2==0 && m%2==0&&n>2&&m>2)
+				
+				if(n==1)
+					ans[i]=m;
+				else 
+				{
+					if(n%2==0 && m%2==0&&n>2&&m>2)
 				{
 					ans[i]=(n*m)/2;
 
 				}
 				else
 					ans[i]=(n*m + 1)/2;
-				
+				}
+
+
 			}
 			for(int i=0;i<T;i++)
 				System.out.println(ans[i]);
