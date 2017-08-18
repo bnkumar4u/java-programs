@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Tarantino {
+public class tarantino {
 
     public static void main(String args[])
     {
@@ -40,7 +40,7 @@ public class Tarantino {
                          * checking chapter no should less than no.of chapters
                          */
                         if (chapters[i]>N)
-                           answer[j]=false;
+                            answer[j]=false;
 
                     }
                     /**
@@ -63,13 +63,13 @@ public class Tarantino {
                      */
                     if(answer[j]==true)
                     {int temp=0;
-                    for (int k=0;k<N;k++)
-                    {
-                        if(chapters[k]==k+1)
-                            temp++;
-                    }
-                    if(temp==N)
-                        answer[j]=false;}
+                        for (int k=0;k<N;k++)
+                        {
+                            if(chapters[k]==k+1)
+                                temp++;
+                        }
+                        if(temp==N)
+                            answer[j]=false;}
 
 
                 }

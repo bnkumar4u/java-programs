@@ -10,6 +10,7 @@ public class hey
 
         
         
-        System.out.println(a);
-    }
+        System.out.println("my love is my world");
+    
+}
 }
